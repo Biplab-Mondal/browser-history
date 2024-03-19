@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.browser-history-container {
+  min-height: 100vh;
+}
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #3367d6;
+}
+.app-logo {
+  height: 20px;
+  width: 80px;
+  align-self: center;
+}
+.search-input-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #2850a7;
+  border: 1px solid #6697ff;
+  margin-left: 0px;
+  width: 190px;
+  height: 35px;
+  border-radius: 3px;
+}
+.input-style {
+  background-color: transparent;
+  border-left: 1px solid #6697ff;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  margin-left: 10px;
+  padding-left: 10px;
+  outline: none;
+}
+.search-icon {
+  height: 25px;
+  width: 30px;
+  align-self: center;
+  padding-left: 7px;
+}
+.history-bottom-section {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.history-list-container {
+  padding-left: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  box-shadow: 4px 8px 8px 8px #ececec;
+}
+.no-history-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.no-history-text {
+  font-family: Roboto;
+  font-size: 20px;
+  color: #475569;
+}
+@media screen and (min-width: 768px) {
+  .nav-container {
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: flex-start;
+  }
+  .app-logo {
+    width: 120px;
+    height: 30px;
+    align-self: center;
+  }
+  .search-input-container {
+    margin-left: 250px;
+    padding-left: 15px;
+    width: 40%;
+    height: 45px;
+    border-radius: 5px;
+  }
+  .search-icon {
+    height: 27px;
+    width: 27px;
+    padding-left: 0px;
+    align-self: center;
+  }
+  .input-style {
+    background-color: transparent;
+    border-left: 1px solid #6697ff;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    margin-left: 10px;
+    padding-left: 15px;
+    outline: none;
+  }
+  .history-bottom-section {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .history-list-container {
+    padding-left: 0px;
+    padding: 20px;
+  }
+  .no-history-text {
+    font-size: 25px;
+  }
+}
